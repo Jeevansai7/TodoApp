@@ -3,6 +3,7 @@ const errors = require('../error/httpErrors')
 exports.fetchTasks = async (req) => {
    let result = -1;
    try {
+      console.log('service called')
       const pool=await dBConnection()
       result = await pool.query(`SELECT id,task,updated_on FROM todo`)
       return  result
