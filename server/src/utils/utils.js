@@ -5,7 +5,8 @@ exports.dBConnection=async()=>{
         host: process.env.databaseLocation,
         database: process.env.databaseName,
         password: process.env.password,
-        port: process.env.port
+        port: process.env.port,
+        max:100
       });
    if(pool._clients[0] && !pool._clients[0]._connected){
     await pool.connect()
