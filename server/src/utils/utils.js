@@ -1,6 +1,5 @@
 const { Pool } = require('pg')
 exports.dBConnection=async()=>{
-  console.log( process.env)
     const pool = new Pool({
         user: process.env.databaseUser,
         host: process.env.databaseLocation,
