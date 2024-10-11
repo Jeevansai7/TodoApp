@@ -1,6 +1,11 @@
 const expres=require('express')
 const router =expres.Router()
 
+router.get("",async(req,res)=>{
+  res.send('connected')
+
+})
+
 router.get("/taskrecords",async(req,res)=>{
   const fetchTodoHandler = require('../services/fetchTodoTasks')
   res.status(200).json(await fetchTodoHandler.fetchTasks(req))
