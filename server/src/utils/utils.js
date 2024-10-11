@@ -7,9 +7,9 @@ exports.dBConnection=async()=>{
         password: process.env.password,
         port: process.env.port
       });
-   //if(pool._clients[0] && !pool._clients[0]._connected){
+   if(pool._clients[0] && !pool._clients[0]._connected){
     await pool.connect()
-   //}
+   }
   
    return pool   
 }
