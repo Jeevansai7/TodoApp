@@ -1,0 +1,57 @@
+.DialogContainer .MuiPaper-root{
+    width: 90vw !important;
+    height: 55vh !important;
+    max-width: 65vw !important;
+}
+.DialogTitle{
+    background-color: black;
+color: brown;
+text-align: center;
+padding: 8px;
+border-bottom: 5px burlywood solid;
+}
+
+.DialogTitle span{
+font-weight:bolder;
+font-size: larger;
+}
+
+.DialogContent{
+padding: 20px !important;
+justify-content:center;
+}
+.DialogContent textarea{
+    width: 98%;
+    height:85%;
+    padding: 5px;
+    font-size: large;
+    text-align: start;
+    text-overflow: clip;
+    resize: none;
+}
+
+.DialogActions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height:10%;
+}
+
+.DialogActions button{
+    height: 100%;
+    width: 20%;
+    font-size: large;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px !important;
+}
+.DialogActions button:hover{
+   cursor: pointer;
+}
+.DialogActions button:first-child{
+    border-color: brown brown burlywood burlywood;
+}
+
+.DialogActions button:last-child{
+    border-color: burlywood burlywood brown brown;
+}

@@ -1,0 +1,55 @@
+.addtodoapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    border-radius: 50px;
+    border-color: black black lime  lime;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.addtodoapp input{
+    width: 90%;
+    height: 6vh;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: large;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.addtodoapp button{
+    color: black;
+   background: white;
+    width: 10%;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 50px;
+    border: none;
+    height: 6vh;
+}
+
+.addtodoapp button:hover{
+     background-color: black; 
+    color: lime;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.addtodoapp:hover{
+    animation: borderstyle 1s ease 0s infinite normal ;
+}
+
+@keyframes borderstyle {
+    0% {border-color: black black lime  lime}
+    25%{border-color: lime black black lime}
+    50% {border-color: lime lime black black}
+    100% {border-color: black black lime  lime}
+}
