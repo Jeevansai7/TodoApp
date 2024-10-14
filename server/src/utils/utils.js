@@ -11,6 +11,6 @@ exports.dBConnection=async()=>{
    if(pool._clients[0] && !pool._clients[0]._connected){
     await pool.connect()
    }
-  
+  console.log("pool",pool,pool._clients)
    return pool   
 }
