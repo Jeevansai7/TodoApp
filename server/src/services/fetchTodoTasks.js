@@ -5,9 +5,9 @@ exports.fetchTasks = async (req) => {
    let result = -1;
    try {
       const pool=await dBConnection()
-      console.log('service called',pool)
+     
       result = await pool.query(`SELECT id,task,updated_on FROM todo`)
-      console.log(await pool.query(`SELECT id,task,updated_on FROM todo`))
+
       return  result
    }
    catch (e) {
