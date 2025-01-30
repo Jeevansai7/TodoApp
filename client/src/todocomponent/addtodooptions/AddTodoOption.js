@@ -5,11 +5,18 @@ const AddTodoOption =(props)=>{
 
     const {clickHandler}=props
     const inputRef=useRef("")
-    
+
+    const onAdd=()=>{
+        if(inputRef.current.value!=''){
+        clickHandler(inputRef.current.value); 
+        inputRef.current.value=''
+        }
+    }
+
     return(
         <div className='addtodoapp'>
-        <input type="search" ref={inputRef} onKeyDown={event=>{if(event.key=='Enter'){clickHandler(inputRef.current.value)}}}/>
-        <button onClick={()=>clickHandler(inputRef.current.value)}>Add</button>
+        <input type="search" ref={inputRef} onKeyDown={event=>{if(event.key=='Enter'){onAdd()}}}/>
+        <button onClick={()=>onAdd()}>Add</button>
         </div>
     )
 };

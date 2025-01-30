@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+describe ('app render',()=>{
+
+  test('renders application with header as Todo Application', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByRole('heading',{name:"Todo Application"});
   expect(linkElement).toBeInTheDocument();
-});
+  });
+
+})

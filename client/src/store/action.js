@@ -105,7 +105,7 @@ function serviceActionError(type, error) {
 }
 
 const instance = axios.create({
-    "baseURL":'https://todoappserver-ei5w.onrender.com/',
+    "baseURL":'http://localhost:3001/',
     "headers":{
         "Content-Type":'application/json'
     }

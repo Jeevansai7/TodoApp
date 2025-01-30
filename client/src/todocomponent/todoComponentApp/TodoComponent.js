@@ -35,7 +35,7 @@ const TodoComponent =()=>{
     }
 
 return(
-    <div class='todoComponent'>
+    <div className='todoComponent'>
         <h1>Todo Application</h1>
         <AddTodoOption clickHandler={addHandler}/>
         <DisplayTodoOptionsList todoList={data ?data:[]} openDialogBox={openDialogBox} />

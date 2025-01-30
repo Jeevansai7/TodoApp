@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTodoOption Component renders correctly 1`] = `
+<div
+  className="addtodoapp"
+>
+  <input
+    onKeyDown={[Function]}
+    type="search"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+</div>
+`;

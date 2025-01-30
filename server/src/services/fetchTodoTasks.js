@@ -6,7 +6,7 @@ exports.fetchTasks = async (req) => {
    try {
       const pool=await dBConnection()
      
-      result = await pool.query(`SELECT id,task,updated_on FROM todo`)
+      result = await pool.query(`SELECT id,task,done,updated_on FROM todo`)
 
       return  result
    }

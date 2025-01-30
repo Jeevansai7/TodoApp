@@ -5,7 +5,7 @@ exports.addTodo = async (req) => {
    try {
       const pool=await dBConnection()
       const {task}=req.body
-      result = await pool.query(`INSERT INTO todo(task,updated_on) VALUES('${task}',now())`)
+      result = await pool.query(`INSERT INTO todo(task,done,updated_on) VALUES('${task}',false,now())`)
     
       return true;
    }
